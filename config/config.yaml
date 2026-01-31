@@ -93,11 +93,13 @@ rss:
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
+      enabled: false
       # max_age_days: 1               # 示例：只推送1天内的文章
 
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
+      enabled: false
       # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
     
     - id: "yahoo-finance"
@@ -109,7 +111,7 @@ rss:
       name: "新的原野"
       url: "https://sinyalee.com/blog/?feed=rss2"
       enabled: true
-      max_age_days: 7
+      max_age_days: 10
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -184,7 +186,7 @@ display:
     new_items: true                   # 新增热点区域（含热榜新增 + RSS 新增）
                                       # 注：热点词汇统计中的新增标记🆕不受此配置影响
 
-    rss: false                         # RSS 订阅区域
+    rss: true                         # RSS 订阅区域
                                       # 开启后将对 RSS 进行关键词分析并在通知中展示
                                       # 关闭后跳过分析，但独立展示区不受影响
 
