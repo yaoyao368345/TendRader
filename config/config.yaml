@@ -104,6 +104,11 @@ rss:
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
       enabled: false                  # 禁用
+    - id: "sinyalee"
+      name: "新的原野"
+      url: "https://sinyalee.com/blog/?feed=rss2"
+      enabled: true
+      max_age_days: 7
 
     # 自定义源示例
     # - id: "custom-feed"
