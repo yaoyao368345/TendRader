@@ -93,7 +93,7 @@ rss:
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
-      enabled: true
+      enabled: false
       # max_age_days: 1               # 示例：只推送1天内的文章
 
     - id: "ruanyifeng"
@@ -186,11 +186,11 @@ display:
     new_items: true                   # 新增热点区域（含热榜新增 + RSS 新增）
                                       # 注：热点词汇统计中的新增标记🆕不受此配置影响
 
-    rss: true                         # RSS 订阅区域
+    rss: false                         # RSS 订阅区域
                                       # 开启后将对 RSS 进行关键词分析并在通知中展示
                                       # 关闭后跳过分析，但独立展示区不受影响
 
-    standalone: false                 # 独立展示区（完整热榜/RSS，不受关键词过滤）
+    standalone: true                 # 独立展示区（完整热榜/RSS，不受关键词过滤）
     ai_analysis: true                 # AI 分析区域
 
   # 📋 独立展示区配置（仅在 regions.standalone: true 时生效）
@@ -201,7 +201,7 @@ display:
   # 注意：同一新闻可能同时出现在关键词匹配区和独立展示区
   standalone:
     platforms: []                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: ["sinyalee","hacker-news"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    rss_feeds: ["sinyalee"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
