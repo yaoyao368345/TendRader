@@ -93,7 +93,7 @@ rss:
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
-      enabled: false
+      enabled: true
       # max_age_days: 1               # 示例：只推送1天内的文章
 
     - id: "ruanyifeng"
@@ -111,7 +111,7 @@ rss:
       name: "新的原野"
       url: "https://sinyalee.com/blog/?feed=rss2"
       enabled: true
-      max_age_days: 10
+      max_age_days: 0
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -201,7 +201,7 @@ display:
   # 注意：同一新闻可能同时出现在关键词匹配区和独立展示区
   standalone:
     platforms: []                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    rss_feeds: ["sinyalee","hacker-news"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
